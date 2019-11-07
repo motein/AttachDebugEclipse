@@ -70,12 +70,11 @@ public class InputSettingsDialog extends Dialog {
     private void createContent(Composite parent) {
 		Group setupGroup = new Group(parent, SWT.NONE);
 		setupGroup.setLayout(new GridLayout(2, false));
-		setupGroup.setLayoutData(new GridData(SWT.FILL, SWT.BEGINNING, false, false));
 		FormData setupfd = new FormData();
-		setupfd.bottom = new FormAttachment(0, 120);
+		setupfd.bottom = new FormAttachment(0, 150);
 		setupfd.top = new FormAttachment(0, 10);
 		setupfd.left = new FormAttachment(0, 10);
-		setupfd.right =  new FormAttachment(200, -10);
+		setupfd.right =  new FormAttachment(100, -10);
 		setupGroup.setLayoutData(setupfd);
 		
 		Label idLabel = new Label(setupGroup, SWT.NONE);
