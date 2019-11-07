@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Attach Debug
+Bundle-SymbolicName: eclispe-attach-debug;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eclispe_attach_debug.Activator
+Bundle-Vendor: motein
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.debug.core,
+ org.eclipse.cdt.debug.core,
+ org.eclipse.cdt.dsf,
+ org.eclipse.cdt.dsf.gdb,
+ org.eclipse.cdt.ui;bundle-version="6.3.0",
+ org.eclipse.cdt.launch;bundle-version="9.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: eclispe-attach-debug
+Bundle-ActivationPolicy: lazy

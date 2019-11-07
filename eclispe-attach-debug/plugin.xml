@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?before=additions">
+         <toolbar
+               id="eclispe-attach-debug.toolbarlaunch">
+            <command
+                  commandId="eclispe-attach-debug.commandattachdebuglaunch"
+                  icon="icons/kickstarter.ico"
+                  style="push"
+                  tooltip="Launch Attach Debug">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="eclispe-attach-debug.commandattachdebuglaunch"
+            name="Launch Attach Debug">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="eclispe_attach_debug.LaunchAttachDebugCommandHandler"
+            commandId="eclispe-attach-debug.commandattachdebuglaunch">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="eclispe_attach_debug.AttachLaunchDelegate"
+            id="eclispe-attach-debug.AttacthDebugLaunchConfigurationType"
+            modes="debug"
+            name="Launch Configuration"
+            public="false"
+            sourceLocatorId="org.eclipse.cdt.debug.core.sourceLocator"
+            sourcePathComputerId="org.eclipse.cdt.debug.core.sourcePathComputer">
+      </launchConfigurationType>
+   </extension>
+
+</plugin>
