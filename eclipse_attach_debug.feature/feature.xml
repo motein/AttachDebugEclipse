@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="eclispe_attach_debug.feature"
-      label="Feature"
+      label="Attach Debug Feature"
       version="1.0.0.qualifier"
       provider-name="Xor">
 
@@ -18,7 +18,7 @@
    </license>
 
    <plugin
-         id="eclispe-attach-debug"
+         id="eclispe_attach_debug"
          download-size="0"
          install-size="0"
          version="0.0.0"
