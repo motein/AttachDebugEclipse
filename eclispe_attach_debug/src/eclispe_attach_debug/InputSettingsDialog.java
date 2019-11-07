@@ -75,7 +75,7 @@ public class InputSettingsDialog extends Dialog {
 		setupfd.bottom = new FormAttachment(0, 120);
 		setupfd.top = new FormAttachment(0, 10);
 		setupfd.left = new FormAttachment(0, 10);
-		setupfd.right =  new FormAttachment(100, -10);
+		setupfd.right =  new FormAttachment(200, -10);
 		setupGroup.setLayoutData(setupfd);
 		
 		Label idLabel = new Label(setupGroup, SWT.NONE);

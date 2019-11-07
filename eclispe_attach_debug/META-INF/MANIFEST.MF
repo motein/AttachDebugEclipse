@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Attach Debug
-Bundle-SymbolicName: eclispe-attach-debug;singleton:=true
+Bundle-SymbolicName: eclispe_attach_debug;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: eclispe_attach_debug.Activator
 Bundle-Vendor: motein

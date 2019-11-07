@@ -41,7 +41,7 @@ public class RunAttachDebug {
             try {
                 ILaunchManager manager = DebugPlugin.getDefault().getLaunchManager();
                 ILaunchConfigurationType type = manager.getLaunchConfigurationType("eclispe-attach-debug.AttacthDebugLaunchConfigurationType");
-                ILaunchConfigurationWorkingCopy wc = type.newInstance(null, "SPECS");
+                ILaunchConfigurationWorkingCopy wc = type.newInstance(null, "AttachDebug");
                 wc.setAttribute(ICDTLaunchConfigurationConstants.ATTR_PROGRAM_NAME, programPath);
                 wc.setAttribute(ICDTLaunchConfigurationConstants.ATTR_DEBUGGER_START_MODE,
                         ICDTLaunchConfigurationConstants.DEBUGGER_MODE_ATTACH);
